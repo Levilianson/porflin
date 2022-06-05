@@ -1,4 +1,58 @@
-img{
-    width: 100px;
+p {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (min-width: 580px) {
+    #lfoto{
+        position: relative;
+        left: 2%;
+        top:-20px
+    }
+    #foto {
+        position: center;
+        width: 100%;
+        border-radius: 20%;    
+        
+    }
+    #nombre{
+        position: relative;
+        
+        top: 5px;
+    }
+    #acerca{
+        position: relative;
+        left: 2%;
+        top: 5px;
+    }
     
+}
+@media (max-width: 581px) {
+    #foto {
+        position: relative;
+        width: 50%;
+        border-radius: 50%;
+        vertical-align:auto;
+        
+     }
+    #nombre{
+        text-align: center;
+        position: relative;
+        vertical-align: middle;
+        right: 25%;
+        
+    }
+    #acerca{
+        position: relative;
+        left: 25%;
+        vertical-align: bottom;
+    }
+
 }
