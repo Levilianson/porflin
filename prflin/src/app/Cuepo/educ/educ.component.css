@@ -1,0 +1,10 @@
+.row{
+    padding: 10px;
+}
+h1,h4{
+    display: inline;
+}
+button{
+    float: right;
+    width: 5%;
+}
