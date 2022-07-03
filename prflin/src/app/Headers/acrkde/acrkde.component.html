@@ -4,12 +4,20 @@
         <img src="../../../assets/auto.png" alt="" id="foto">
     </div>
     <div class="col-3" id="nombr">
-        <h1 id="nombre">{{persona.nombre}}{{persona.apellido}}</h1>
+        <!--<h1 id="nombre">{{persona.nombre}} {{persona.apellido}}-->
+        <h1 id="nombre"> nombre apellido
+        </h1>
+        <div *ngIf="element == true" id="contenido">           
+            <input type="text" id="element" value="nombre"/>
+        </div>
+        <button *ngIf="element == false" (click)="showData()">Edit</button>         
+        <button *ngIf="element == true" (click)="hideData()">guard</button>     
         <h2>titulo</h2>
     </div>
     <div class="col-6" id="acerca">
         <span>
-            <h1>Acerca de </h1>
+            <h1>Acerca de 
+            </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing 
                 elit. Excepturi quae distinctio veniam ducimus sit 
                 ipsam harum voluptatum quis dicta sunt?</p>

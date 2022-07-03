@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SecurityContext } from '@angular/core';
 import { persona } from 'src/app/Model/persona.model';
 import { PersonaService } from 'src/app/service/persona.service';
 
@@ -15,5 +15,12 @@ export class AcrkdeComponent implements OnInit {
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})
   }
-
+  //lo que dice el boton
+  element=false;
+  showData(){
+    return(this.element=true);
+  }
+  hideData(){
+    return(this.element= false);
+  }
 }
